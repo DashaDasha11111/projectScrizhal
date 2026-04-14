@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="ФИО"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/edit_cleric_name"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_clerics_search"
+            android:fontFamily="serif"
+            android:hint="ФИО"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="@color/korich"
+            android:textColorHint="@color/obichni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Дата рождения (ГГГГ-ММ-ДД или ДД.ММ.ГГГГ)"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/edit_cleric_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_clerics_search"
+            android:fontFamily="serif"
+            android:hint="1970-01-15"
+            android:inputType="date"
+            android:padding="8dp"
+            android:textColor="@color/korich"
+            android:textColorHint="@color/obichni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="День ангела (ДД.ММ)"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/edit_cleric_name_day"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_clerics_search"
+            android:fontFamily="serif"
+            android:hint="15.01"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/korich"
+            android:textColorHint="@color/obichni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Диаконская хиротония (дата)"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/edit_cleric_diaconal"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_clerics_search"
+            android:fontFamily="serif"
+            android:hint="Оставьте пустым при одной хиротонии"
+            android:inputType="date"
+            android:padding="8dp"
+            android:textColor="@color/korich"
+            android:textColorHint="@color/obichni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Иерейская хиротония (дата)"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/edit_cleric_priest_ord"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_clerics_search"
+            android:fontFamily="serif"
+            android:hint="2010-06-01"
+            android:inputType="date"
+            android:padding="8dp"
+            android:textColor="@color/korich"
+            android:textColorHint="@color/obichni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Приход (храм)"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <Spinner
+            android:id="@+id/edit_cleric_church"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:minHeight="44dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Телефон"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/edit_cleric_phone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_clerics_search"
+            android:fontFamily="serif"
+            android:hint="+7(999)000-00-00"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:textColor="@color/korich"
+            android:textColorHint="@color/obichni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Почта"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/edit_cleric_email"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_clerics_search"
+            android:fontFamily="serif"
+            android:hint="email@example.com"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textColor="@color/korich"
+            android:textColorHint="@color/obichni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="serif"
+            android:text="Тип духовенства"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <RadioGroup
+            android:id="@+id/edit_cleric_is_monk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/edit_cleric_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Белое духовенство" />
+            <RadioButton
+                android:id="@+id/edit_cleric_monk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Монашествующее" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="serif"
+            android:text="Последняя награда"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <Spinner
+            android:id="@+id/edit_cleric_last_award"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@android:drawable/btn_dropdown" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Год последней награды"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/edit_cleric_last_award_year"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_clerics_search"
+            android:fontFamily="serif"
+            android:hint="2024"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="@color/korich"
+            android:textColorHint="@color/obichni" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/edit_cleric_cancel"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="Отмена"
+                android:textColor="@color/obichni" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/edit_cleric_save"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:text="Сохранить"
+                android:textColor="@color/text"
+                app:backgroundTint="@color/obichni"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

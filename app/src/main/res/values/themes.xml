@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Scrizhal" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/obichni</item>
+        <item name="colorPrimaryVariant">@color/korich</item>
+        <item name="colorOnPrimary">@color/text </item>
+    </style>
+
+    <style name="Theme.Scrizhal" parent="Theme.Material3.DayNight.NoActionBar" />
+</resources>

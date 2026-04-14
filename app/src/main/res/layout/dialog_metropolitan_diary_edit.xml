@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Дата (дд.мм.гггг)"
+            android:textColor="@color/korich"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etDiaryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="10.04.2026"
+            android:inputType="date"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Служение (храм, место)"
+            android:textColor="@color/korich"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etDiaryWhere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Где совершаю служение в этот день…"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="2"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Порядок дня"
+            android:textColor="@color/korich"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etDiarySchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Богослужения, переезды, как планирую день…"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="2"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Встречи и дела"
+            android:textColor="@color/korich"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etDiaryMeetings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="С кем нужно увидеться, о чём беседа…"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="2"
+            android:textColor="@color/text" />
+    </LinearLayout>
+</ScrollView>

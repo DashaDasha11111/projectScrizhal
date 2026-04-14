@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon2">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavCleric" />
+
+    <LinearLayout
+        android:id="@+id/bottomNavCleric"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/navClericProfile"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:contentDescription="Профиль"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_list_active" />
+
+        <ImageView
+            android:id="@+id/navClericLiturgies"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:contentDescription="Литургии"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_done" />
+
+        <ImageView
+            android:id="@+id/navClericNotifications"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:contentDescription="Уведомления"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_inbox" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

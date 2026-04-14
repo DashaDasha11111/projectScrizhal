@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon2"
+    tools:context=".Main">
+
+    <ImageView
+        android:id="@+id/btnLogout"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Выйти"
+        android:src="@drawable/ic_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/periodToggleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:checkedButton="@id/btn_week"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogout"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_week"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="На неделю"
+            android:textColor="@color/text"
+            app:backgroundTint="@color/korich"
+            app:cornerRadius="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_month"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="На месяц"
+            android:textColor="@color/text"
+            app:backgroundTint="@color/obichni" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_later"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Далее"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/obichni"
+            app:cornerRadius="10dp" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:id="@+id/title_events"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="События"
+        android:textColor="@color/korich"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/title_awards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/periodToggleGroup" />
+
+    <TextView
+        android:id="@+id/title_awards"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Награды"
+        android:textColor="@color/korich"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/title_events"
+        app:layout_constraintTop_toBottomOf="@id/periodToggleGroup" />
+
+    <Spinner
+        android:id="@+id/spinner_events"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_awards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_events" />
+
+    <Spinner
+        android:id="@+id/spinner_awards"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner_events"
+        app:layout_constraintTop_toBottomOf="@id/title_awards" />
+
+    <RadioGroup
+        android:id="@+id/rg_award_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_events"
+        tools:layout_editor_absoluteX="16dp">
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Все" />
+
+        <RadioButton
+            android:id="@+id/rb_region"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Регион" />
+
+        <RadioButton
+            android:id="@+id/rb_moscow"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:text="Москва" />
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/spisok"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_award_level" />
+
+    <FrameLayout
+        android:id="@+id/clericsPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogout">
+
+        <include
+            android:id="@+id/clericsTabInclude"
+            layout="@layout/layout_clerics_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/churchesPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavChurches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogout">
+
+        <include
+            android:id="@+id/churchesTabInclude"
+            layout="@layout/layout_churches_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <!-- Main bottom navigation (4 tabs) -->
+    <LinearLayout
+        android:id="@+id/bottomNavMain"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/navMainDashboard"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:contentDescription="Дашборд"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_bird_active" />
+
+        <ImageView
+            android:id="@+id/navMainClerics"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:contentDescription="Клирики"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_chel" />
+
+        <ImageView
+            android:id="@+id/navMainChurches"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:contentDescription="Храмы"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_church_s" />
+
+        <ImageView
+            android:id="@+id/navMainOrders"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:contentDescription="Заявки"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_push_s" />
+
+    </LinearLayout>
+
+    <!-- Churches sub-navigation: список / литургии / карта -->
+    <LinearLayout
+        android:id="@+id/bottomNavChurches"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/navSubChurchList"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:contentDescription="Список храмов"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_church_s_active" />
+
+        <ImageView
+            android:id="@+id/navSubLiturgy"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:contentDescription="Литургии"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_book_k" />
+
+        <ImageView
+            android:id="@+id/navSubMap"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:contentDescription="Карта храмов"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_map" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

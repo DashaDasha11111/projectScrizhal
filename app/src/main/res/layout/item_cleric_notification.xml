@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="6dp">
+
+    <TextView
+        android:id="@+id/tvNotifText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вы назначены на праздничную литургию"
+        android:textColor="@color/korich"
+        android:textSize="14sp"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/tvNotifMeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01.01.2026 • Храм • Праздник"
+        android:textColor="@color/button"
+        android:textSize="12sp"
+        android:fontFamily="serif" />
+
+</LinearLayout>
+

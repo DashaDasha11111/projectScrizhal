@@ -1,0 +1,32 @@
+name: Проверка дней рождения клириков
+
+on:
+  schedule:
+    # 05:00 UTC = 08:00 Москва (UTC+3)
+    - cron: "0 5 * * *"
+  workflow_dispatch:   # Позволяет запустить вручную из GitHub UI для тестирования
+
+jobs:
+  birthday-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Получить код репозитория
+        uses: actions/checkout@v4
+
+      - name: Установить Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: scripts/package.json
+
+      - name: Установить зависимости
+        working-directory: scripts
+        run: npm install
+
+      - name: Запустить проверку дней рождения
+        working-directory: scripts
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+        run: node birthday-check.js

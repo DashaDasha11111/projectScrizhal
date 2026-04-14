@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bel"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Карточка клирика"
+                android:textColor="@color/korich"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/dialog_cleric_close"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:contentDescription="Закрыть"
+                android:padding="4dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                app:tint="@color/korich" />
+        </FrameLayout>
+
+        <!-- Основная информация -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="Основная информация"
+            android:textColor="@color/obichni"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/obichni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="ФИО"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/dialog_cleric_fio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/korich"
+            android:textSize="15sp"
+            android:text="Андрей Константинович Милюков" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Рождение"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/dialog_cleric_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/korich"
+            android:textSize="15sp"
+            android:text="16.03.1979" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="День Ангела"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/dialog_cleric_name_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/korich"
+            android:textSize="15sp"
+            android:text="18.03" />
+
+        <!-- Служение -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Служение"
+            android:textColor="@color/obichni"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/obichni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Сан"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/dialog_cleric_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/korich"
+            android:textSize="15sp"
+            android:text="Иерей" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Диаконская хиротония"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/dialog_cleric_diaconal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/korich"
+            android:textSize="15sp"
+            android:text="15.11.2009" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Иерейская хиротония"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/dialog_cleric_priest_ord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/korich"
+            android:textSize="15sp"
+            android:text="17.11.2009" />
+
+        <!-- Контакты -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Контакты"
+            android:textColor="@color/obichni"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/obichni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Приход"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/dialog_cleric_parish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/korich"
+            android:textSize="15sp"
+            android:text="Храм благоверного князя Александра Невского в г. Красноярске; Клирик" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Номер тел."
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/dialog_cleric_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/korich"
+            android:textSize="15sp"
+            android:text="+7(999)999-99-99" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Почта"
+            android:textColor="@color/obichni"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/dialog_cleric_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/korich"
+            android:textSize="15sp"
+            android:text="milukov@gmail.com" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialog_cleric_edit"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Редактировать"
+                android:textAllCaps="false"
+                android:textColor="@color/text"
+                app:backgroundTint="@color/obichni"
+                app:cornerRadius="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialog_cleric_delete"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Удалить"
+                android:textAllCaps="false"
+                android:textColor="@color/text"
+                app:backgroundTint="@color/obichni"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

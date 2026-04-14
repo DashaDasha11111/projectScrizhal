@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="23dp"
+    android:height="30dp"
+    android:viewportWidth="23"
+    android:viewportHeight="30">
+    <path
+        android:fillColor="@color/korich"
+        android:pathData="M3.23724,25.3584V29.7048C3.23724,29.7618 3.306,29.7885 3.34445,29.7467L4.41533,28.5328L5.4862,29.7467C5.52233,29.7885 5.59341,29.7618 5.59341,29.7048V25.3584H3.23724Z" />
+    <path
+        android:fillColor="@color/korich"
+        android:pathData="M5.08295,0H1.67684C0.751595,0 0,0.749955 0,1.67318V26.3197C0,27.243 0.751595,27.9929 1.67684,27.9929H2.7419V26.8464H2.38998C1.88891,26.8464 1.48574,26.4418 1.48574,25.9442V25.0186C1.48574,24.5186 1.89126,24.1164 2.38998,24.1164H21.8512V26.8465H6.08844V27.9929H23V8.9298e-05L5.08295,0ZM15.7837,9.63794H12.8157V17.2458H10.5213V9.63794H7.55333V7.34851H10.5213V4.6963H12.8157V7.34851H15.7837V9.63794Z" />
+    <path
+        android:fillColor="@color/korich"
+        android:pathData="M5.66797,3.27441L18.49537,3.27441L18.49537,20.83631L5.66797,20.83631Z" />
+</vector>

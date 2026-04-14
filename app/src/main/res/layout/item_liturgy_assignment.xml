@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="6dp">
+
+    <TextView
+        android:id="@+id/tvAssignmentFeast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Праздник"
+        android:textColor="@color/korich"
+        android:textSize="14sp"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/tvAssignmentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01.01.2026"
+        android:textColor="@color/button"
+        android:textSize="13sp"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/tvAssignmentStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="назначено"
+        android:textColor="@color/button"
+        android:textSize="12sp"
+        android:fontFamily="serif" />
+
+</LinearLayout>
+

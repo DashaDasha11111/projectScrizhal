@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bel"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialog_church_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/korich"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingEnd="36dp"
+            android:text="Собор Казанской иконы Божией Матери в г. Ачинске" />
+
+        <ImageView
+            android:id="@+id/dialog_church_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end|top"
+            android:contentDescription="Закрыть"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@color/korich" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/obichni" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="serif"
+        android:text="Адрес"
+        android:textColor="@color/obichni"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/dialog_church_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textColor="@color/korich"
+        android:textSize="14sp"
+        android:text="662100, Красноярский край, г. Ачинск, ул. Карла Маркса, 21" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="serif"
+        android:text="Настоятель"
+        android:textColor="@color/obichni"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/dialog_church_rector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textColor="@color/korich"
+        android:textSize="14sp"
+        android:text="Евгений Григорьевич Фролов" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="serif"
+        android:text="Клириков"
+        android:textColor="@color/obichni"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/dialog_church_cleric_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textColor="@color/korich"
+        android:textSize="14sp"
+        android:text="8" />
+</LinearLayout>

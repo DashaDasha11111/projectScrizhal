@@ -1,0 +1,10 @@
+{
+  "name": "scrizhal-birthday-check",
+  "version": "1.0.0",
+  "description": "Ежедневная проверка дней рождения и именин клириков",
+  "main": "birthday-check.js",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "firebase-admin": "^13.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="my_gold">#E9D8B8</color>
+    <color name="button">#B38312</color>
+    <color name="korich"> #624501 </color>
+    <color name="obichni"> #C39D45 </color>
+    <color name='text'> #F7EDDA </color>
+    <color name="bel"> #E9D8B8</color>
+</resources>
